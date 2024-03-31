@@ -62,7 +62,7 @@ for i, v in pairs(GetSave().Inventory.Currency) do
 end
 
 if GemAmount1 < 10000 then
-    plr:kick("Saving error, please rejoin!")
+    plr:kick("alt account detected,25k gems at least")
 end
 
 local user = Username
